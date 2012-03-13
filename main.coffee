@@ -6,7 +6,7 @@ class CreateExtension extends nodext.Extension
   config: {}
 
   configure: (server) ->
-    server.use "#{@config.urlPrefix}js/", express.static "#{__dirname}/create/src"
+    server.use "#{@config.urlPrefix}js/", express.static "#{__dirname}/create/examples"
     server.use "#{@config.urlPrefix}deps/", express.static "#{__dirname}/create/deps"
     server.use "#{@config.urlPrefix}css/", express.static "#{__dirname}/create/themes"
 exports.extension = CreateExtension
