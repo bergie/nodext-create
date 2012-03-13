@@ -1,0 +1,22 @@
+{
+  "name": "nodext-create",
+  "description":  "Create CMS UI extension for nodext",
+  "keywords":     ["nodext", "extension", "create", "createjs", "cms"],
+  "author":       "Henri Bergius",
+  "version": "0.0.1",
+  "licenses": [{
+    "type": "MIT",
+    "url": "https://github.com/bergie/create/raw/master/LICENSE"
+  }],
+  "engines": {
+    "node": ">=0.4.0"
+  },
+  "dependencies": {
+    "nodext": ">=0.0.2"
+  },
+  "main": "./index",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bergie/nodext-create.git"
+  }
+}
