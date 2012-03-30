@@ -2,6 +2,10 @@ cleaner = ///
   <http://viejs.org/ns/([a-z]+)>
 ///
 
+uriMatcher = ///
+  ^<([a-z\/])>$
+///
+
 idToSubject = (id, request) ->
   if request.method is 'POST'
     return "<#{request.url}#{id}>"
@@ -19,7 +23,7 @@ exports.fromJSONLD = (data) ->
     cleaned = cleaner.exec predicate
     continue unless cleaned
     continue if typeof object is 'object'
-    continue if typeof object is 'string' and object.substr(0, 1) is '<'
+    continue if typeof object is 'string' and uriMatcher.exec object
     newData[cleaned[1]] = object 
   newData
 
