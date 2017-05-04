@@ -1,6 +1,8 @@
 nodext-create - Create integration for NodeXT
 =============================================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/bergie/nodext-create.svg)](https://greenkeeper.io/)
+
 This package provides a [NodeXT](https://github.com/bergie/nodext#readme) extension for including the [Create](http://createjs.org/) CMS UI into Node.js web applications.
 
 ## Installation
